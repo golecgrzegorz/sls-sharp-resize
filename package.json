@@ -7,8 +7,6 @@
   "scripts": {
     "deploy:prod": "SLS_DEBUG=* sls deploy -s prod -r eu-central-1",
     "deploy:dev": "SLS_DEBUG=* sls deploy -s dev -r eu-central-1",
-    "remove:prod": "SLS_DEBUG=* sls remove -s prod -r eu-central-1",
-    "remove:dev": "SLS_DEBUG=* sls remove -s dev -r eu-central-1",
     "info:dev": "sls info -s dev -r eu-central-1",
     "info:prod": "sls info -s prod -r eu-central-1"
   },
