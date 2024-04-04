@@ -1,0 +1,20 @@
+{
+  "name": "sls-sharp-resize",
+  "version": "1.0.0",
+  "description": "Resize image on upload to S3 bucket using Sharp",
+  "author": "Gregory Golec <grzegorz.golec.squareboxmobile@gmail.com>",
+  "main": "src/trigger.js",
+  "scripts": {
+    "deploy:prod": "SLS_DEBUG=* sls deploy -s prod -r eu-central-1",
+    "deploy:dev": "SLS_DEBUG=* sls deploy -s dev -r eu-central-1",
+    "remove:prod": "SLS_DEBUG=* sls remove -s prod -r eu-central-1",
+    "remove:dev": "SLS_DEBUG=* sls remove -s dev -r eu-central-1",
+    "info:dev": "sls info -s dev -r eu-central-1",
+    "info:prod": "sls info -s prod -r eu-central-1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.540.0",
+    "@aws-sdk/lib-storage": "^3.540.0"
+  }
+}
