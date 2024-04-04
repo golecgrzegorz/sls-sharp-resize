@@ -85,6 +85,18 @@ resources:
           BlockPublicPolicy: false
           IgnorePublicAcls: true
           RestrictPublicBuckets: true
+        CorsConfiguration:
+          CorsRules:
+            - AllowedMethods:
+                - GET
+                - PUT
+                - POST
+                - HEAD
+              AllowedOrigins:
+                - "*"
+              AllowedHeaders:
+                - "*"
+
     # SERVE BUCKET
     targetBucket:
       Type: AWS::S3::Bucket
